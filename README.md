@@ -1,10 +1,10 @@
 # interactive_slam
 
+Fix GLSL 3.30 Version Issue, in `src/guik/imgui_application.cpp`:
 ```cpp
 // *参考：https://github.com/SMRT-AIST/interactive_slam/issues/15
 // glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 // glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
-
 glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
