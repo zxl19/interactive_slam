@@ -1,4 +1,15 @@
 # interactive_slam
+
+```cpp
+// *参考：https://github.com/SMRT-AIST/interactive_slam/issues/15
+// glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+// glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+
+glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+```
+
 ***interactive_slam*** is an open source 3D LIDAR-based mapping framework. In contrast to existing automatic SLAM packages, we aim to develop a semi-automatic framework which allows the user to interactively and intuitively correct mapping failures (e.g., corrupted odometry, wrong loop detection, distorted map, etc) with minimal human effort. This framework provides several map correction features:
   - [Manual & Automatic] Loop closing
   - [Manual] Plane-based map correction
